@@ -56,13 +56,9 @@
           v-if="availableLastModifiedValues.length"
           ref="lastModifiedFilter"
           :filter-label="$gettext('Last Modified')"
-          :filterable-attributes="['label']"
           :items="availableLastModifiedValues"
-          :option-filter-label="$gettext('Filter by last modified date')"
-          :show-option-filter="true"
           :close-on-click="true"
           class="files-search-filter-last-modified oc-mr-s"
-          display-name-attribute="label"
           filter-name="lastModified"
         >
           <template #item="{ item }">
